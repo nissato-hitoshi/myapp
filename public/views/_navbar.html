@@ -1,0 +1,23 @@
+<!-- Static navbar -->
+<nav class="{{ me.navbar.navbarClass }}">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" ui-sref="{{ me.navbar.href }}">
+      <span class="glyphicon glyphicon-{{ me.navbar.glyphicon }}" aria-hidden="true"></span> {{ me.navbar.navbarTitle }}
+    </a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+  <ul ng-repeat="navbarItem in me.navbar.navbarItems" class="{{ navbarItem.class }}">
+    <li ng-repeat="link in navbarItem.links" class="{{ link.class }}">
+      <a ui-sref="{{ link.href }}"><span class="glyphicon glyphicon-{{ link.glyphicon }}" aria-hidden="true"></span> {{ link.value }}</a>
+    </li>
+  </ul>
+</div><!--/.nav-collapse -->
+</div><!--/.container-fluid -->
+</nav>

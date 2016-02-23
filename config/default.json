@@ -1,0 +1,21 @@
+{
+  "mongodb": {
+      "server": "localhost",
+      "port": 27017,
+      "dbname": "jukebox"
+  },
+  "navbar": {
+    "navbarTitle": "myApp サイト",
+    "navbarClass": "navbar navbar-inverse navbar-default navbar-fixed-top",
+    "href": "root.home",
+    "glyphicon": "home",
+    "navbarItems": [{
+      "class": "nav navbar-nav",
+      "links": [
+        { "value": "Menu1", "href": "root.menu1", "glyphicon": "ok-sign" },
+        { "value": "Menu2", "href": "root.menu2", "glyphicon": "question-sign" },
+        { "value": "Menu3", "href": "root.menu3", "glyphicon": "info-sign" }
+      ]
+      }]
+  }
+}
